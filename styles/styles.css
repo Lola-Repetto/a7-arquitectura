@@ -26,8 +26,8 @@
     font-size: medium;  
 }
 .npg{
-    width: 9%;
-    height: 9%; 
+    width: 15%;
+    height: 15%; 
 }
 .header-puesta{
     grid-area: header-puesta;
@@ -40,31 +40,32 @@
     background-color: lightgray;
 }
 
+.fondo-foto{
+    background-image: url('../multimedia/croquis\ nico.jpeg');
+}
 /*INDEX HTML: tamaños de las casa, grid, flex y todo sobre la pagina principal*/
+
 #texto-de-casa{ 
     color:black; 
     font-weight: 300;   
     width: 75%;
     font-family: 'Poppins', sans-serif;
 }
+
+.carrousel-area{
+    margin-bottom: 3%;
+}
+
 .casas-index{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    grid-area: casas-index;
     object-fit: cover;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
-.imagen-texto-index{
-    grid-area: imagen-texto-index;
-}
-.conocenos-index{
-    grid-area: conocenos-index;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 20%;
-}
+
 .titulo-casa-pag1{
     font-family: 'Poppins', sans-serif;
     color: darkslategrey;
@@ -74,9 +75,14 @@
     width: 40vw;
     margin-right: 15px;
     margin-bottom: 150px;
+    margin-left: 20%;
 }
 .index-sn-texto{
     margin-left: 15%;
+}
+
+.h1-texto-index{
+    filter: blur(5px);
 }
 
 /*tamaños de las casa*/
@@ -181,10 +187,11 @@
 /*h1 de los html*/
 .h1{
     font-family: 'Poppins', sans-serif;   
-    color: darkslategrey;
+    color: black;
     text-align: center;
     font-weight: 200%;
     height: 15vh;
+    
 }
 /*SOBRE NOSOTROS*/
 .tamaño-sn{
@@ -288,6 +295,7 @@
     max-width: 900px;
     margin: 2em auto;
     font: 0.9em/1.2 Arial, Helvetica,sans-serif;
+    margin-top: 10%;
 }
 .contacto-tamaño{
     width: 40%;

@@ -79,7 +79,7 @@
     margin-left: 15%;
 }
 
-/*tamaños de las casa y pseudoclase*/
+/*tamaños de las casa*/
 .tamaño-casa-arco{
     width: 95%;
     height: 95%;
@@ -92,11 +92,7 @@
     width: 95%;
     height: 95%;  
 }
-.tamaño-casa-petra{
-    width: 95%;
-    height: 95%;  
-    
-}
+
 .casas-index-carrousel{
     
     height: 130vh;
@@ -104,6 +100,37 @@
     margin-bottom: 10%;
    
 }
+
+/*CASA PETRA*/
+
+.tamaño-casa-petra{
+    width: 95%;
+    height: 95%;      
+}
+
+/*agregando grid a casa petra*/
+
+.img-petra1{
+    grid-area: img-petra1;
+}
+.img-petra2{
+    grid-area: img-petra2;
+}
+.img-petra3{
+    grid-area: img-petra3;
+}
+.img-petra4{
+    grid-area: img-petra4;
+}
+.img-petra5{
+    grid-area: img-petra5;
+}
+.img-petra6{
+    grid-area: img-petra6;
+}
+
+
+
 /*FOOTER: ( aca se pone el grid-area del footer tmb )*/
 .logo-footer{
     height: 50px;

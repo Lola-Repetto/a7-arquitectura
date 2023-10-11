@@ -54,6 +54,7 @@
 
 .carrousel-area{
     margin-bottom: 3%;
+    grid-area: carrousel-area
 }
 
 .casas-index{
@@ -76,6 +77,7 @@
     margin-right: 15px;
     margin-bottom: 150px;
     margin-left: 20%;
+    grid-area: tamaño-contactanos
 }
 .index-sn-texto{
     margin-left: 15%;
@@ -85,20 +87,26 @@
     filter: blur(5px);
 }
 
-/*tamaños de las casa*/
+/*tamaños de las casa y sus areas*/
 .tamaño-casa-arco{
     width: 95%;
     height: 95%;
+    grid-area: tamaño-casa-arco;
 }
 .tamaño-casa-maite{
     width: 95%;
-    height: 90%;   
+    height: 90%; 
+    grid-area: tamaño-casa-maite;  
 }
 .tamaño-casa-ans{
     width: 95%;
     height: 95%;  
+    grid-area: tamaño-casa-ans;
 }
 
+.tamaño-casa-petra{
+    grid-area: tamaño-casa-petra;
+}
 .casas-index-carrousel{
     
     height: 130vh;
@@ -106,6 +114,33 @@
     margin-bottom: 10%;
    
 }
+
+/*media @ en index html*/
+
+
+
+@media (min-width: 578px) and (max-width: 800px) {
+     .grid-conteiner{
+        display: grid;   
+        grid-template-areas: 
+        "header-puesta header-puesta"
+        "container-contacto container-contacto "
+        "container-contacto  tamaño-contactanos"
+        "carrousel-area carrousel-area"
+        "tamaño-casa-arco tamaño-casa-maite "
+        "tamaño-casa-ans  tamaño-casa-petra "
+        "footer-padre footer-padre"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.03px 0.5px 1fr 1fr 0.5px 0.5px 0.03px;
+  
+}
+  
+}
+ 
+
+
+
 
 /*CASA PETRA*/
 
